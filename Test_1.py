@@ -1,10 +1,10 @@
-a = {'key':'value'}
-a['key1'] = 'value1'
-print(a)
-
-b = set([1, 2, 3, 6, 1])
-print('b = ',b)
-
-c = {1, 2, 3, 6, 1}
-d = sum(c)
-print('c = ',d)
+print ('Test 5-8, 5-9')
+personals = ['Sergei','vlad','Egor','tonya','admin','Sveta']
+if personals:
+    for personal in personals:
+	    if personal == ('admin'):
+		    print('\nHellow '+personal+', would you like to see a status report\n')
+	    else:
+		    print('Hellow '+personal.title()+', thank you for logging in agsain')
+else:
+	print('We need to find some user')
