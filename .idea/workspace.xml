@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67a05e27-383a-42eb-9592-cefbe39554ba" name="Changes" comment="Pereustanovka">
+    <list default="true" id="67a05e27-383a-42eb-9592-cefbe39554ba" name="Changes" comment="Add new class">
       <change afterPath="$PROJECT_DIR$/OP09_Telegram.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OB01_Klass.py" beforeDir="false" afterPath="$PROJECT_DIR$/OB01_Klass-Game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test_1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,17 +26,26 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Goga-ton/Zerocoder_AB.git",
-    "accountId": "ac227246-2a5c-49d9-8bbe-7b45b295db72"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Goga-ton&quot;
   }
-}]]></component>
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Goga-ton/Zerocoder_AB.git&quot;,
+    &quot;accountId&quot;: &quot;ac227246-2a5c-49d9-8bbe-7b45b295db72&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2zg8567AtQdJYE0aZ45EKydkwG9" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -40,8 +53,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.DZ_OB01.executor": "Run",
     "Python.DZ_OG02.executor": "Run",
+    "Python.OB01_Klass-Bank.executor": "Run",
+    "Python.OB01_Klass.executor": "Run",
     "Python.Test 5.8.executor": "Run",
+    "Python.Test.executor": "Run",
     "Python.Test_1.executor": "Run",
     "Python.arithmetic.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -50,6 +67,11 @@
     "last_opened_file_path": "C:/Users/Anton_B/PycharmProjects/PythonProjectTK"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Anton_B\PycharmProjects\PythonProjectTK\DZ" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -81,12 +103,29 @@
       <option name="project" value="LOCAL" />
       <updated>1752244743185</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add DZ_OG02">
+      <option name="closed" value="true" />
+      <created>1752244815811</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1752244815811</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add new class">
+      <option name="closed" value="true" />
+      <created>1752584025238</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1752584025238</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add DZ_OG02" />
     <MESSAGE value="Pereustanovka" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pereustanovka" />
+    <MESSAGE value="Add DZ_OG02" />
+    <MESSAGE value="Add new class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new class" />
   </component>
 </project>

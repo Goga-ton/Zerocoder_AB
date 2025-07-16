@@ -1,3 +1,43 @@
+# Основное задание Task
+class Task():
+    def __init__(self, description, deadline, status = "Не выполнена"):
+        self.description = description
+        self.deadline = deadline
+        self.status = status
+
+    def complete(self):
+        self.status = "Выполнена"
+        print(f"\nЗадача {self.description} - выполнена\n")
+
+task1 = Task("Необходимо сходить в магазин", "16.07.2025")
+task2 = Task("Помыть окна", "10.07.2025")
+task3 = Task("Выбросить мусор", "12.07.2025")
+task4 = Task("Записаться к парикмахеру", "14.07.2025")
+task5 = Task("Купить билеты", "18.07.2025")
+
+tasks = [task1, task2, task3, task4, task5]
+
+
+def complete_task(description):
+    found = False
+    for i in tasks:
+        if i.description == description:
+            i.complete()
+            found = True
+    if not found:
+        print(f"\nЗадача {description} не найдена\n")
+
+print("Список задач")
+for i in tasks:
+    print(f"Описание: {i.description}, Дата: {i.deadline}, Статус: {i.status}")
+
+complete_task("Помыть окна")
+
+for i in tasks:
+      if i.status == "Не выполнена":
+          print(f"Описание: {i.description}, Дата: {i.deadline}, Статус: {i.status}")
+
+# Дополнительное задание про магазины
 class Store():
     def __init__(self, name, address):
         self.name = name
