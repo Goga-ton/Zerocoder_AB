@@ -1,21 +1,22 @@
-class Store():
-    def __init__(self, name, address):
-        self.name = name
-        self.address = address
-        self.product = []
+#Инкапсуляция1
+class Test():
+    def __init__(self):
+        self.public = "Публичный атрибут"
+        self._protected = "Защищенный атрибут"
+        self.__private = "Приватный атрибут"
 
-    def add_product(self, title, price):
-        self.product.append({"title":title, "price":price})
+    def get_private(self):
+        return self.__private
 
+    def set_private(self, value):
+        self.__private = value
 
-    #def remove_product(self, product):
-store1 = Store("Пятерочка", "Ленина, 5")
-store2 = Store("Дикси", "Интернациональная, 17")
-store3 = Store("Лента", "Гагарина, 28")
-store1.add_product("Яблоко", 100)
-store1.add_product("Вишня", 400)
+test = Test()
+print(test.public)
+print(test._protected)
+print(test.__private)
 
-
-print(store1.name, store1.address, store1.product)
-print(store2.name, store2.address, store2.product)
-print(store3.name, store3.address, store3.product)
+# print(test.get_private())
+#
+# test.set_private("Получили значение приватного атрибута")
+# print(test.get_private())
