@@ -69,3 +69,4 @@ manager.remove(user2)
 print(f"Выводим СПИСОК в читаемом виде: ")
 for i in manager.users:
     print(i.fun_all())
+
