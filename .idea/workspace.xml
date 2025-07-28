@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67a05e27-383a-42eb-9592-cefbe39554ba" name="Changes" comment="Add new class">
+    <list default="true" id="67a05e27-383a-42eb-9592-cefbe39554ba" name="Changes" comment="18/07/2025 v2">
       <change afterPath="$PROJECT_DIR$/OP09_Telegram.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OB01_Klass.py" beforeDir="false" afterPath="$PROJECT_DIR$/OB01_Klass-Game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test_1.py" afterDir="false" />
     </list>
@@ -54,9 +53,22 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.DZ_OB01.executor": "Run",
+    "Python.DZ_OB02.executor": "Run",
+    "Python.DZ_OB03.executor": "Run",
+    "Python.DZ_OB04.executor": "Run",
     "Python.DZ_OG02.executor": "Run",
+    "Python.DZ_OP08.executor": "Run",
+    "Python.DZ_OP09.executor": "Run",
     "Python.OB01_Klass-Bank.executor": "Run",
     "Python.OB01_Klass.executor": "Run",
+    "Python.OB02_Incapsuljacija.executor": "Run",
+    "Python.OB02_Nasledovanie.executor": "Run",
+    "Python.OB03_Compozic-Agregac-Polimorf.executor": "Run",
+    "Python.OB03_Compozicii.executor": "Run",
+    "Python.OB03_Praktika.executor": "Run",
+    "Python.OB04_SOLID.executor": "Run",
+    "Python.OP09_Telegram.executor": "Run",
+    "Python.Practicum OB (Тема 4).executor": "Run",
     "Python.Test 5.8.executor": "Run",
     "Python.Test.executor": "Run",
     "Python.Test_1.executor": "Run",
@@ -64,13 +76,43 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Anton_B/PycharmProjects/PythonProjectTK"
+    "last_opened_file_path": "C:/Users/Anton_B/PycharmProjects/PythonProjectTK",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Anton_B\PycharmProjects\PythonProjectTK\DZ" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="OB04_SOLID" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonProjectTK" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OB04_SOLID.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.OB04_SOLID" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -119,13 +161,68 @@
       <option name="project" value="LOCAL" />
       <updated>1752584025238</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add new class">
+      <option name="closed" value="true" />
+      <created>1752687328761</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1752687328761</updated>
+    </task>
+    <task id="LOCAL-00006" summary="18/07/2025">
+      <option name="closed" value="true" />
+      <created>1752827476595</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1752827476595</updated>
+    </task>
+    <task id="LOCAL-00007" summary="18/07/2025 v2">
+      <option name="closed" value="true" />
+      <created>1752843656587</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1752843656587</updated>
+    </task>
+    <task id="LOCAL-00008" summary="18/07/2025 v2">
+      <option name="closed" value="true" />
+      <created>1753204183937</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1753204183937</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Pereustanovka" />
     <MESSAGE value="Add DZ_OG02" />
     <MESSAGE value="Add new class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new class" />
+    <MESSAGE value="18/07/2025" />
+    <MESSAGE value="18/07/2025 v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="18/07/2025 v2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/DZ/DZ_OB03.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/DZ/DZ_OB03.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/DZ/DZ_OB03.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

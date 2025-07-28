@@ -1,22 +1,26 @@
-#Инкапсуляция1
-class Test():
-    def __init__(self):
-        self.public = "Публичный атрибут"
-        self._protected = "Защищенный атрибут"
-        self.__private = "Приватный атрибут"
+from abc import ABC, abstractmethod
+class Formatted(ABC): #создаем абстрактный клас
+    @abstractmethod
+    def format(self):
+        pass
+class TextFormatted(Formatted):
+    def format(self):
+        print(report.tittle)
+        print(report.content)
 
-    def get_private(self):
-        return self.__private
+class HtmlFormatted(Formatted):
+    def format(self):
+        print(f"<h1>{report.tittle}</h1>")
+        print(f"<p>{report.content}</p>")
 
-    def set_private(self, value):
-        self.__private = value
+class Report:
+    def __init__(self, tittle, content, formatted):
+        self.tittle = tittle
+        self.content = content
+        self.formatted = formatted #в formatted сохраняется объект класса либо HtmlFormatted либо TextFormatted
 
-test = Test()
-print(test.public)
-print(test._protected)
-print(test.__private)
+    def docPrinter(self):
+        self.formatted.format() #вызываем функцию format  у характеристика formated
 
-# print(test.get_private())
-#
-# test.set_private("Получили значение приватного атрибута")
-# print(test.get_private())
+report  = Report("Заголовок отчета", "это текст отчета его тут много", HtmlFormatted())
+report.docPrinter()

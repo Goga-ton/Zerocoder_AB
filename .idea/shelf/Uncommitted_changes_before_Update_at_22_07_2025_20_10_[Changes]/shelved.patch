@@ -1,0 +1,286 @@
+Index: Test_1.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#Инкапсуляция1\r\nclass Test():\r\n    def __init__(self):\r\n        self.public = \"Публичный атрибут\"\r\n        self._protected = \"Защищенный атрибут\"\r\n        self.__private = \"Приватный атрибут\"\r\n\r\n    def get_private(self):\r\n        return self.__private\r\n\r\n    def set_private(self, value):\r\n        self.__private = value\r\n\r\ntest = Test()\r\nprint(test.public)\r\nprint(test._protected)\r\nprint(test.__private)\r\n\r\n# print(test.get_private())\r\n#\r\n# test.set_private(\"Получили значение приватного атрибута\")\r\n# print(test.get_private())
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Test_1.py b/Test_1.py
+--- a/Test_1.py	(revision 29061ddf3758278dda5003cb7e9f5e4cbdee1e86)
++++ b/Test_1.py	(date 1752836847551)
+@@ -5,16 +5,16 @@
+         self._protected = "Защищенный атрибут"
+         self.__private = "Приватный атрибут"
+ 
+-    def get_private(self):
+-        return self.__private
+-
+-    def set_private(self, value):
+-        self.__private = value
++    # def get_private(self):
++    #     return self.__private
++    #
++    # def set_private(self, value):
++    #     self.__private = value
+ 
+ test = Test()
+ print(test.public)
+ print(test._protected)
+-print(test.__private)
++#print(test.__private)
+ 
+ # print(test.get_private())
+ #
+Index: Test.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>class Store():\r\n    def __init__(self, name, address):\r\n        self.name = name\r\n        self.address = address\r\n        self.product = {}\r\n\r\n    def add_product(self, title, price):\r\n        self.product[title] = price\r\n\r\n    def del_product(self,title):\r\n        del self.product[title]\r\n\r\n    def get_product(self,title):\r\n        return self.product.get(title)\r\n\r\nstore1 = Store(\"Пятерочка\", \"Ленина, 5\")\r\nstore1.add_product(\"Яблоко\", 100)\r\nstore1.add_product(\"Вишня\", 400)\r\nstore1.add_product(\"Арбуз\", 250)\r\n\r\nstore2 = Store(\"Дикси\", \"Интернациональная, 17\")\r\nstore2.add_product(\"Картошка\", 60)\r\nstore2.add_product(\"Кукуруза\", 85)\r\n\r\nstore3 = Store(\"Лента\", \"Гагарина, 28\")\r\nstore3.add_product(\"Тыква\", 180)\r\nstore3.add_product(\"Патиссон\", 120)\r\n\r\nprint(f\"Магазин '{store1.name}' расположенный по адресу: {store1.address} \"\r\n      f\"\\nИмеет ассортимент:\\n {store1.product}\")\r\nprint(f\"Магазин '{store2.name}' расположенный по адресу: {store2.address} \"\r\n      f\"\\nИмеет ассортимент:\\n {store2.product}\")\r\nprint(f\"Магазин '{store3.name}' расположенный по адресу: {store3.address} \"\r\n      f\"\\nИмеет ассортимент:\\n {store3.product}\")\r\n\r\nstore1.add_product(\"Арбуз\", 800)\r\nprint()\r\nprint(store1.name)\r\nprint(f\"Новая ценаs Арбуза - {store1.get_product(\"Арбуз\")}\")\r\n\r\nprint(f\"\\nСтоимость искомого товара Кукурузы - {store2.get_product(\"Кукуруза\")}\")\r\n\r\nstore3.del_product(\"Патиссон\")\r\nprint(f\"\\nМагазин '{store3.name}' расположенный по адресу: \"\r\n      f\"{store3.address} \\nОставшийся ассортимент:\\n {store3.product}\")\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Test.py b/Test.py
+--- a/Test.py	(revision 29061ddf3758278dda5003cb7e9f5e4cbdee1e86)
++++ b/Test.py	(date 1753199923367)
+@@ -1,45 +1,31 @@
+-class Store():
+-    def __init__(self, name, address):
++class Employee:
++    def __init__(self, name, age, nationality):
+         self.name = name
+-        self.address = address
+-        self.product = {}
+-
+-    def add_product(self, title, price):
+-        self.product[title] = price
++        self.age = age
++        self.nationality = nationality
+ 
+-    def del_product(self,title):
+-        del self.product[title]
+ 
+-    def get_product(self,title):
+-        return self.product.get(title)
++# class Zookeeper(Employee):
++#     def __init__(self, name, age, nationality):
++#         super().__init__(name, age, nationality)
++#         self.position = "Смотритель"  # Постоянный атрибут
++#
++#     def feed_animal(self):
++#         print(f"{self.position} {self.name} кормит животных")
+ 
+-store1 = Store("Пятерочка", "Ленина, 5")
+-store1.add_product("Яблоко", 100)
+-store1.add_product("Вишня", 400)
+-store1.add_product("Арбуз", 250)
+ 
+-store2 = Store("Дикси", "Интернациональная, 17")
+-store2.add_product("Картошка", 60)
+-store2.add_product("Кукуруза", 85)
++class Veterinarian(Employee):
++    def __init__(self, name, age, nationality):
++        super().__init__(name, age, nationality)
++        self.position = "Ветеринар"  # Постоянный атрибут
+ 
+-store3 = Store("Лента", "Гагарина, 28")
+-store3.add_product("Тыква", 180)
+-store3.add_product("Патиссон", 120)
++    def heal_animal(self):
++        print(f"{self.position} {self.name} лечит животных")
+ 
+-print(f"Магазин '{store1.name}' расположенный по адресу: {store1.address} "
+-      f"\nИмеет ассортимент:\n {store1.product}")
+-print(f"Магазин '{store2.name}' расположенный по адресу: {store2.address} "
+-      f"\nИмеет ассортимент:\n {store2.product}")
+-print(f"Магазин '{store3.name}' расположенный по адресу: {store3.address} "
+-      f"\nИмеет ассортимент:\n {store3.product}")
+ 
+-store1.add_product("Арбуз", 800)
+-print()
+-print(store1.name)
+-print(f"Новая ценаs Арбуза - {store1.get_product("Арбуз")}")
++# Создаем экземпляр ветеринара
++vet = Veterinarian("Ханна", 42, "Немка")
+ 
+-print(f"\nСтоимость искомого товара Кукурузы - {store2.get_product("Кукуруза")}")
+-
+-store3.del_product("Патиссон")
+-print(f"\nМагазин '{store3.name}' расположенный по адресу: "
+-      f"{store3.address} \nОставшийся ассортимент:\n {store3.product}")
++# Теперь все работает:
++print(vet.position)  # Выведет: "Ветеринар"
++vet.heal_animal()  # Выведет: "Ветеринар Ханна лечит животных"
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"67a05e27-383a-42eb-9592-cefbe39554ba\" name=\"Changes\" comment=\"Add new class\">\r\n      <change afterPath=\"$PROJECT_DIR$/OP09_Telegram.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/OB01_Klass.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/OB01_Klass-Game.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Test.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Test.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Test_1.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Test_1.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;Goga-ton&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/Goga-ton/Zerocoder_AB.git&quot;,\r\n    &quot;accountId&quot;: &quot;ac227246-2a5c-49d9-8bbe-7b45b295db72&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;customColor&quot;: &quot;&quot;,\r\n  &quot;associatedIndex&quot;: 4\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2zg8567AtQdJYE0aZ45EKydkwG9\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"ModuleVcsDetector.initialDetectionPerformed\": \"true\",\r\n    \"Python.DZ_OB01.executor\": \"Run\",\r\n    \"Python.DZ_OG02.executor\": \"Run\",\r\n    \"Python.OB01_Klass-Bank.executor\": \"Run\",\r\n    \"Python.OB01_Klass.executor\": \"Run\",\r\n    \"Python.Test 5.8.executor\": \"Run\",\r\n    \"Python.Test.executor\": \"Run\",\r\n    \"Python.Test_1.executor\": \"Run\",\r\n    \"Python.arithmetic.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"git-widget-placeholder\": \"master\",\r\n    \"last_opened_file_path\": \"C:/Users/Anton_B/PycharmProjects/PythonProjectTK\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Anton_B\\PycharmProjects\\PythonProjectTK\\DZ\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-python-sdk-e0ed3721d81e-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.25410.159\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"67a05e27-383a-42eb-9592-cefbe39554ba\" name=\"Changes\" comment=\"\" />\r\n      <created>1752141170136</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1752141170136</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Add DZ_OG02\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1752244636576</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1752244636576</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Pereustanovka\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1752244743185</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1752244743185</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Add DZ_OG02\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1752244815811</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1752244815811</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Add new class\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1752584025238</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1752584025238</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"5\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Pereustanovka\" />\r\n    <MESSAGE value=\"Add DZ_OG02\" />\r\n    <MESSAGE value=\"Add new class\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Add new class\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 29061ddf3758278dda5003cb7e9f5e4cbdee1e86)
++++ b/.idea/workspace.xml	(date 1753200581588)
+@@ -4,10 +4,10 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="67a05e27-383a-42eb-9592-cefbe39554ba" name="Changes" comment="Add new class">
++    <list default="true" id="67a05e27-383a-42eb-9592-cefbe39554ba" name="Changes" comment="18/07/2025 v2">
+       <change afterPath="$PROJECT_DIR$/OP09_Telegram.py" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/OB01_Klass.py" beforeDir="false" afterPath="$PROJECT_DIR$/OB01_Klass-Game.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/DZ/DZ_OB02.py" beforeDir="false" afterPath="$PROJECT_DIR$/DZ/DZ_OB02.py" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/Test_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test_1.py" afterDir="false" />
+     </list>
+@@ -54,9 +54,19 @@
+   "keyToString": {
+     "ModuleVcsDetector.initialDetectionPerformed": "true",
+     "Python.DZ_OB01.executor": "Run",
++    "Python.DZ_OB02.executor": "Run",
++    "Python.DZ_OB03.executor": "Run",
+     "Python.DZ_OG02.executor": "Run",
++    "Python.DZ_OP08.executor": "Run",
++    "Python.DZ_OP09.executor": "Run",
+     "Python.OB01_Klass-Bank.executor": "Run",
+     "Python.OB01_Klass.executor": "Run",
++    "Python.OB02_Incapsuljacija.executor": "Run",
++    "Python.OB02_Nasledovanie.executor": "Run",
++    "Python.OB03_Compozic-Agregac-Polimorf.executor": "Run",
++    "Python.OB03_Compozicii.executor": "Run",
++    "Python.OB03_Praktika.executor": "Run",
++    "Python.OP09_Telegram.executor": "Run",
+     "Python.Test 5.8.executor": "Run",
+     "Python.Test.executor": "Run",
+     "Python.Test_1.executor": "Run",
+@@ -64,7 +74,8 @@
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "RunOnceActivity.git.unshallow": "true",
+     "git-widget-placeholder": "master",
+-    "last_opened_file_path": "C:/Users/Anton_B/PycharmProjects/PythonProjectTK"
++    "last_opened_file_path": "C:/Users/Anton_B/PycharmProjects/PythonProjectTK",
++    "settings.editor.selected.configurable": "preferences.lookFeel"
+   }
+ }]]></component>
+   <component name="RecentsManager">
+@@ -119,13 +130,60 @@
+       <option name="project" value="LOCAL" />
+       <updated>1752584025238</updated>
+     </task>
+-    <option name="localTasksCounter" value="5" />
++    <task id="LOCAL-00005" summary="Add new class">
++      <option name="closed" value="true" />
++      <created>1752687328761</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1752687328761</updated>
++    </task>
++    <task id="LOCAL-00006" summary="18/07/2025">
++      <option name="closed" value="true" />
++      <created>1752827476595</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1752827476595</updated>
++    </task>
++    <task id="LOCAL-00007" summary="18/07/2025 v2">
++      <option name="closed" value="true" />
++      <created>1752843656587</created>
++      <option name="number" value="00007" />
++      <option name="presentableId" value="LOCAL-00007" />
++      <option name="project" value="LOCAL" />
++      <updated>1752843656587</updated>
++    </task>
++    <option name="localTasksCounter" value="8" />
+     <servers />
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Pereustanovka" />
+     <MESSAGE value="Add DZ_OG02" />
+     <MESSAGE value="Add new class" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Add new class" />
++    <MESSAGE value="18/07/2025" />
++    <MESSAGE value="18/07/2025 v2" />
++    <option name="LAST_COMMIT_MESSAGE" value="18/07/2025 v2" />
++  </component>
++  <component name="XDebuggerManager">
++    <breakpoint-manager>
++      <breakpoints>
++        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
++          <url>file://$PROJECT_DIR$/DZ/DZ_OB03.py</url>
++          <line>2</line>
++          <option name="timeStamp" value="1" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
++          <url>file://$PROJECT_DIR$/DZ/DZ_OB03.py</url>
++          <line>12</line>
++          <option name="timeStamp" value="2" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
++          <url>file://$PROJECT_DIR$/DZ/DZ_OB03.py</url>
++          <line>40</line>
++          <option name="timeStamp" value="3" />
++        </line-breakpoint>
++      </breakpoints>
++    </breakpoint-manager>
+   </component>
+ </project>
+\ No newline at end of file
+Index: OP09_Telegram.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/OP09_Telegram.py b/OP09_Telegram.py
+new file mode 100644
+--- /dev/null	(date 1751387060620)
++++ b/OP09_Telegram.py	(date 1751387060620)
+@@ -0,0 +1,48 @@
++# Telegram bot
++import telebot
++import datetime
++import time
++import threading
++import random
++
++bot = telebot.TeleBot('7763593032:AAH9nUfnF94Cop22CPlBir1-2DIxMdAQGOg')
++
++@bot.message_handler(commands=['start'])
++def start_message(message):
++    bot.reply_to(message, "Привет! Это тестовое сообщение от чатБота")
++    # Ниже прописываем поток
++    # Thread — функция, которая создает поток,
++    # target — то, куда будет сохраняться название функции, которую мы запускаем в потоке,
++    # send_reminders — используемая функция,
++    # args — аргументы, которые надо передать.
++    reminder_thread = threading.Thread(target=send_reminder, args=(message.chat.id,)) # Запятая нужна потому что обычно все аргументы передаются в виде картежа.
++    reminder_thread.start()
++
++@bot.message_handler(commands=['fact'])
++def fact_message(message):
++    list = ['**Гидра — потенциально бессмертное существо**',
++            '**Крионика — путь к технологическому бессмертию**',
++            '**Информационное бессмертие через цифровизацию сознания**']
++    random_fact = random.choice(list)
++    bot.reply_to(message, f"Привет! Лови факт о бессмертии {random_fact}")
++
++def send_reminder(chat_id):
++    first_rem = "09:00"
++    second_rem = "14:00"
++    end_rem = "18:00"
++    while True: # Запускаем бесконечный цикл который будет работать постоянно
++        # datetime - это встроенный модуль Python для работы с датой и временем
++        # datetime.now() - метод, который возвращает объект datetime с текущими
++        now = datetime.datetime.now().strftime('%H:%M')
++        if now == first_rem or now == second_rem or now == end_rem:
++            bot.send_message(chat_id, "Тестовое напоминание")
++            time.sleep(61) # интервал проверки условия
++        time.sleep(1) # интервал работы цикла while чтобы запросы были не постоянными а 1 раз в секунду
++
++
++bot.polling(none_stop=True)
++
++
++
++
++
