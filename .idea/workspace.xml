@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67a05e27-383a-42eb-9592-cefbe39554ba" name="Changes" comment="29/07/2025 v1">
-      <change afterPath="$PROJECT_DIR$/OP09_Telegram.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_07_2025_20_10_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_07_2025_20_10__Changes_.xml" beforeDir="false" />
+    <list default="true" id="67a05e27-383a-42eb-9592-cefbe39554ba" name="Changes" comment="31/07/2025 v1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OB01_Klass-Bank.py" beforeDir="false" afterPath="$PROJECT_DIR$/OB01_Class-Bank.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OB01_Klass-Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/OB01_Class-Game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test_1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,41 +47,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.DZ_OB01.executor": "Run",
-    "Python.DZ_OB02.executor": "Run",
-    "Python.DZ_OB03.executor": "Run",
-    "Python.DZ_OB04.executor": "Run",
-    "Python.DZ_OB06.executor": "Run",
-    "Python.DZ_OB5.executor": "Run",
-    "Python.DZ_OG02.executor": "Run",
-    "Python.DZ_OP08.executor": "Run",
-    "Python.DZ_OP09.executor": "Run",
-    "Python.OB01_Klass-Bank.executor": "Run",
-    "Python.OB01_Klass-Game.executor": "Run",
-    "Python.OB01_Klass.executor": "Run",
-    "Python.OB02_Incapsuljacija.executor": "Run",
-    "Python.OB02_Nasledovanie.executor": "Run",
-    "Python.OB03_Compozic-Agregac-Polimorf.executor": "Run",
-    "Python.OB03_Compozicii.executor": "Run",
-    "Python.OB03_Praktika.executor": "Run",
-    "Python.OB04_SOLID.executor": "Run",
-    "Python.OB05_Pygame.executor": "Run",
-    "Python.OP09_Telegram.executor": "Run",
-    "Python.Practicum OB (Тема 4).executor": "Run",
-    "Python.Test 5.8.executor": "Run",
-    "Python.Test.executor": "Run",
-    "Python.Test_1.executor": "Run",
-    "Python.arithmetic.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Anton_B/PycharmProjects/PythonProjectTK",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.DZ_OB01.executor&quot;: &quot;Run&quot;,
+    &quot;Python.DZ_OB02.executor&quot;: &quot;Run&quot;,
+    &quot;Python.DZ_OB03.executor&quot;: &quot;Run&quot;,
+    &quot;Python.DZ_OB04.executor&quot;: &quot;Run&quot;,
+    &quot;Python.DZ_OB06.executor&quot;: &quot;Run&quot;,
+    &quot;Python.DZ_OB5.executor&quot;: &quot;Run&quot;,
+    &quot;Python.DZ_OG02.executor&quot;: &quot;Run&quot;,
+    &quot;Python.DZ_OP08.executor&quot;: &quot;Run&quot;,
+    &quot;Python.DZ_OP09.executor&quot;: &quot;Run&quot;,
+    &quot;Python.OB01_Klass-Bank.executor&quot;: &quot;Run&quot;,
+    &quot;Python.OB01_Klass-Game.executor&quot;: &quot;Run&quot;,
+    &quot;Python.OB01_Klass.executor&quot;: &quot;Run&quot;,
+    &quot;Python.OB02_Incapsuljacija.executor&quot;: &quot;Run&quot;,
+    &quot;Python.OB02_Nasledovanie.executor&quot;: &quot;Run&quot;,
+    &quot;Python.OB03_Compozic-Agregac-Polimorf.executor&quot;: &quot;Run&quot;,
+    &quot;Python.OB03_Compozicii.executor&quot;: &quot;Run&quot;,
+    &quot;Python.OB03_Praktika.executor&quot;: &quot;Run&quot;,
+    &quot;Python.OB04_SOLID.executor&quot;: &quot;Run&quot;,
+    &quot;Python.OB05_Pygame.executor&quot;: &quot;Run&quot;,
+    &quot;Python.OP09_Telegram.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Practicum OB (Тема 4).executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test 5.8.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test_1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.arithmetic.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Anton_B/PycharmProjects/PythonProjectTK&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Anton_B\PycharmProjects\PythonProjectTK" />
@@ -218,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753771463877</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="31/07/2025 v1">
+      <option name="closed" value="true" />
+      <created>1753969467771</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1753969467772</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -228,7 +230,8 @@
     <MESSAGE value="18/07/2025" />
     <MESSAGE value="18/07/2025 v2" />
     <MESSAGE value="29/07/2025 v1" />
-    <option name="LAST_COMMIT_MESSAGE" value="29/07/2025 v1" />
+    <MESSAGE value="31/07/2025 v1" />
+    <option name="LAST_COMMIT_MESSAGE" value="31/07/2025 v1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
