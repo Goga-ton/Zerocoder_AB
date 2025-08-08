@@ -5,4 +5,4 @@ def area_circlus(r):
 
 def area_square(a):
     s_a = a**2
-    return s_s
+    return s_s1
