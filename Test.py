@@ -3,3 +3,6 @@ def area_circlus(r):
     return s
 
 
+def area_square(a):
+    s_a = a**2
+    return s_s
